@@ -15,10 +15,16 @@ get '/home' do
   "This is a homepage"
 end
 
-get '/cat' do
+get '/random-cat' do
   @name = ["Amigo", "Misty", "Almond"].sample
   erb(:index)
  #  "<div style='border: 3px dashed red'>
  #  <img src='https://media.newyorker.com/photos/5dfab39dde5fcf00086aec77/16:9/w_1280,c_limit/Lane-Cats.jpg'>
  # </div>"
+end
+
+get '/named-cat' do
+  p params
+  @name = params[:name]
+  erb(:index)
 end

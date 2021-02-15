@@ -4,4 +4,11 @@
 <img src='https://media.newyorker.com/photos/5dfab39dde5fcf00086aec77/16:9/w_1280,c_limit/Lane-Cats.jpg'>
 </div>
 
-<h1> My name is Judi Dench <%= @name %>! </h1>
+<% if @name %>
+<h1> My name is <%= @name %>! </h1>
+<% end %>
+<form action="/named-cat"> 
+<!-- <label for="name"> Name: <label> -->
+  <input type="text" name="name"> </input>
+  <input type="submit" value="Submit">  </input>
+</form>
