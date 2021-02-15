@@ -17,6 +17,6 @@ end
 
 get '/cat' do
   "<div style='border: 3px dashed red'>
-  <img src='http://bit.ly/1eze8aE'>
+  <img src='https://media.newyorker.com/photos/5dfab39dde5fcf00086aec77/16:9/w_1280,c_limit/Lane-Cats.jpg'>
  </div>"
 end
